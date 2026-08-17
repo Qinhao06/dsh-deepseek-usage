@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# build output
+dist/
+lib/
+*.tsbuildinfo
+
+# state / logs
+*.log
+.DS_Store
+
+# editor
+.vscode/
+.idea/
+
+# dsh local state (never commit real usage data)
+*.day.json
+storages/

@@ -1,0 +1,16 @@
+# Bundle patch for the dsh-deepseek-usage plugin.
+#
+# Canonical install (adds this as a profile bundle layer; requires a dsh web
+# restart):
+#   dsh plugin --profile web add link:/absolute/path/to/dsh-deepseek-usage
+#
+# Hot install without restart (insert the same row into
+# ~/.dsh/profiles/web/cordis.patch.yml; the profile patch layer is
+# HMR-watched, so the host half loads live and a page refresh picks up the
+# client half):
+#   - insert:
+#       - id: deepseek-usage
+#         name: dsh-deepseek-usage
+- insert:
+    - id: deepseek-usage
+      name: dsh-deepseek-usage

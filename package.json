@@ -1,0 +1,32 @@
+{
+  "name": "dsh-deepseek-usage",
+  "version": "0.1.0",
+  "description": "DeepSeek API usage widget for the DSH web GUI: remaining balance, today's consumption (platform token preferred, local log pricing fallback), and the current session's cost in a bottom-right floating card.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./src/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "deepseek-harness",
+    "plugin",
+    "balance",
+    "usage",
+    "billing",
+    "web"
+  ],
+  "author": "Hao Qin",
+  "license": "MIT"
+}
